@@ -1,0 +1,136 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+header{
+  background-color: #a7d1df;
+  color: rgb(147, 201, 213);
+  padding: 20px;
+}
+
+
+
+header h1{
+  margin: 0;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+footer{
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive navigation for small screens */
+@media (max-width:768px){
+  nav a{
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+/* Header - center logo, title, and slogan */
+header {
+  display: flex;             /* use flexbox layout */
+  flex-direction: column;    /* stack items vertically */
+  align-items: center;       /* center horizontally */
+  justify-content: center;   /* optional: center vertically if header tall */
+  padding: 20px;
+}
+
+header img {
+  display: block;            /* make logo a block element */
+  margin: 10 auto;            /* center horizontally */
+}
+
+.title-slogan h1, .title-slogan .slogan {
+  text-align: center;        /* center text under logo */
+  margin: 0;
+}
+
+.title-slogan .slogan {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.centered-nav {
+  display: flex;
+  flex-direction: row;     
+  justify-content: center;  
+  margin-top: 20px;        
+  margin-left: 40px;       /* shift the links slightly to the right */
+}
+
+/* Center header content */
+header {
+  display: flex;
+  flex-direction: column;  /* stack logo/title/slogan and nav vertically */
+  align-items: center;     /* center everything horizontally */
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;  /* logo on top, title/slogan below */
+  align-items: center;
+}
+
+.logo-title img {
+  margin-bottom: 10px;     /* space between logo and title */
+}
+
+.title-slogan h1,
+.title-slogan .slogan {
+  margin: 0;
+}
+
+/* Horizontal navigation links */
+.horizontal-nav {
+  display: flex;             /* put links in a row */
+  justify-content: flex-start; /* align links from left within the nav container */
+  margin-top: 15px;
+  width: 350px;               /* adjust width to move links slightly right */
+}
+
+.horizontal-nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;            /* space between links */
+  font-weight: bold;
+}
+
+.horizontal-nav a:hover {
+  color: #0077cc;            /* optional hover effect */
+}
+
+/* Center the nav container under logo */
+header .horizontal-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive: stack links vertically on small screens */
+@media (max-width: 600px) {
+  .horizontal-nav {
+    flex-direction: column;
+    width: auto;             /* full width for mobile */
+  }
+
+  .horizontal-nav a {
+    margin: 5px 0;
+  }
+}
